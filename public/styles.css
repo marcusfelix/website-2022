@@ -1,0 +1,50 @@
+.cover {
+  transform: rotateX(45deg) rotateY(0deg) rotateZ(45deg) scale(1.3);
+  transition: transform 300ms ease;
+}
+
+.card:hover .cover {
+  transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(0.8);
+}
+
+.fadein {
+  opacity: 0;
+  animation: 300ms fadein 1s ease-in 1 forwards;
+}
+
+.spin {
+  animation: spin 1s linear infinite; 
+  transform-origin: center center;
+}
+
+@keyframes fadein { 
+  100% { 
+      opacity: 1;
+  } 
+}
+
+@keyframes spin { 
+  100% { 
+      -webkit-transform: rotate(360deg); 
+      transform:rotate(360deg); 
+  } 
+}
+
+.blink {
+  animation: blink-animation 1s steps(5, start) infinite;
+}
+
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

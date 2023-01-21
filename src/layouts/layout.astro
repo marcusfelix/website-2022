@@ -1,0 +1,64 @@
+---
+import { UserCircle } from "phosphor-react";
+
+const { title, description, tags, banner, dark } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="description" content={description ?? "Deploid is a development service for agile business which needs custom and ever-changing digital product like apps, websites and dashboards"}/>
+    <meta name="tags" content={tags ?? "development, developer, web, native, mobile, service, subscription, saas, digital product, dashboard, digital business, digital marketing"}/>
+		<link rel="icon" href="/favicon.ico" />
+		<link href="/styles.css" rel="stylesheet"/>
+		<link href="/fonts/helvetica/stylesheet.css" rel="stylesheet"/>
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+	</head>
+	<body class="tracking-normal">
+		<header class={`container mx-auto relative z-10`}>
+			<div class={`flex px-4 py-5 items-center gap-4 ${dark ? "text-white" : ""}`}>
+				<h3 class="font-semibold text-2xl flex-1 leading-tight">Marcus Felix</h3>
+				<a href="/">
+					<img src={dark ? "/icon.svg" : "/icon-color.svg"} class="w-20 h-20"/>
+				</a>
+				<div class="flex justify-end flex-1">
+					<a href="https://dash.deploid.studio" class="h-10 w-10 rounded-full flex items-center justify-center hover:rotate-12 transition-all">
+						<img src="/cup.svg" class="w-12 h-12"/>
+					</a>
+				</div>
+			</div>
+		</header>
+		<slot />
+		<footer class="container mx-auto py-20 opacity-40 px-4">
+			<div class="text-sm mb-10">
+				¹ Hosting service provided for free within our fair use policy; ² Service to bring your branding assets replacing images, texts, parameters, keys and secrets; ³ Upload/Deletion/Edition content provided by you into the database; ⁴ Process of build, sign and upload to Appstore and Play Store, as well as review process follow-up on behalf of your own developer account; ⁵ Design and development of new screens and data handling on top of a starter kit; ⁶ You can request unlimited tasks and they will be executed one by one on queue basis;
+			</div>
+			<div class="flex flex-col md:flex-row gap-8">
+				<div class="flex flex-col">
+					<div class="flex items-center gap-3">
+						<a href="/">
+							<img src="/logo.svg" class="h-7 w-7"/>
+						</a>
+						<p class="text-xl font-bold">Deplōid Studio</p>
+					</div>
+				</div>
+				<div class="flex-1 flex flex-col text-lg gap-2">
+					<a href="mailto: hello@deploid.studio">hello@deploid.studio</a>
+				</div>
+				<div class="flex flex-col text-lg gap-2">
+					<a href="">Github</a>
+					<a href="">Instagram</a>
+					<a href="">TikTok</a>
+				</div>
+				<div class="flex flex-col text-lg gap-2">
+					<a href="/terms">Terms of service</a>
+					<a href="/privacy">Privacy policy</a>
+				</div>
+			</div>
+			<div class="py-4">© {new Date().getFullYear()} Deploid Studio </div>
+		</footer>
+	</body>
+</html>

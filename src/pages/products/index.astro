@@ -1,0 +1,39 @@
+---
+import Card from "../../components/card.astro";
+import Layout from "../../layouts/layout.astro";
+
+interface Frontmatter {
+  title: string;
+  cover: string;
+  category: string
+}
+
+const posts = await Astro.glob<Frontmatter>('./*.md');
+---
+
+<script>
+  const search = (new URL(window.location.href).searchParams.get("search") ?? "").toLowerCase();
+  if(search != ""){
+    const grid = document.getElementById("grid");
+
+    for (const child of grid!.children) {
+      const title = child.getAttribute("data-title") ?? "";
+      const tags = child.getAttribute("data-tags") ?? "";
+      if(!(title + " " + tags).toLowerCase().includes(search)){
+        (child as any).style.display = "none"
+      }
+    }
+  }
+  
+</script>
+
+<Layout title="Products - Deploid Studio">
+  <div class="container mx-auto px-4 py-20">
+    <div class="flex flex-col gap-10">
+      <h1 class="text-4xl font-semibold">Catalog</h1>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4 min-h-[400px]" id="grid">
+        {posts.map((e) => <Card data={e.frontmatter} url={"/products/" + e.file.split("/").at(-1)?.split(".").at(0)}/>)}
+      </div>
+    </div>
+  </div>
+</Layout>

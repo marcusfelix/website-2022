@@ -1,0 +1,60 @@
+---
+import { ArrowRight, NotePencil, Pencil, Play, Storefront } from "phosphor-react";
+import Demo from "../components/demo";
+import Layout from "./layout.astro";
+
+const { frontmatter } = Astro.props;
+const slug = frontmatter.url.split("/").at(-1);
+---
+
+<Layout title={frontmatter.title + " - Deploid Studio"} tags={frontmatter.tags}>
+  <div class="flex flex-col gap-10 my-10 ">
+    <div class="container mx-auto px-4">
+      <h1 class="font-semibold text-4xl">{frontmatter.title}</h1>
+    </div>
+    <div class="container mx-auto">
+      <Demo url={frontmatter.demo} mobile={frontmatter.mobile} client:load/>
+    </div>
+    <div class="container mx-auto flex flex-col md:flex-row max-w-5xl text-lg gap-6 items-start">
+      <div class="flex flex-col gap-20">
+        <div class="prose-lg">
+          <slot/>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div class="text-blue-800 bg-blue-100 p-4 flex flex-col gap-4 rounded-xl">
+            <Pencil size={34}/>
+            <h4 class="text-xl font-semibold">Extensive whitelabeling</h4>
+            <p class="text-sm opacity-75">Make it personal changing the color scheme, texts and icons. Do it yourself changing parameters or hand over to us.</p>
+          </div>
+          {frontmatter.platforms.some((e: any) => e === "ios" || e === "android") ? <div class="text-green-800 bg-green-100 p-4 flex flex-col gap-4 rounded-xl">
+            <Storefront size={34}/>
+            <h4 class="text-xl font-semibold">You own app</h4>
+            <p class="text-sm opacity-75">Put yourself on Appstore or Play Store with your own custom app and start making business in your client's smartphone</p>
+          </div> : null}
+        </div>
+      </div>
+      <div class="md:max-w-xs flex w-full flex-col gap-6 py-2 items-stretch">
+        <div>
+          <h4 class="font-semibold">Features</h4>
+          <div class="flex flex-row flex-wrap gap-2">
+            {frontmatter.features.map((e: string) => <span class="text-sm text-gray-500">{e}</span>)}
+          </div>
+        </div>
+        <div>
+          <h4 class="font-semibold">Platforms</h4>
+          <div class="flex flex-row flex-wrap gap-2">
+            {frontmatter.platforms.map((e: string) => <span class="text-sm text-gray-500">{e}</span>)}
+          </div>
+        </div>
+        <div>
+          
+        </div>
+        <a href={"https://dash.deploid.studio/#/deploy/" + slug} class="bg-black text-white mt-4 px-6 py-4 flex items-center gap-4 rounded-xl text-xl">
+          <Play size={30} />
+          <span class="flex-1 pt-[2px] text-center">Deploy</span>
+          <ArrowRight size={30} />
+        </a>
+      </div>
+    </div>
+  </div>
+</Layout>
