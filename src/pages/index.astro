@@ -1,7 +1,8 @@
 ---
 import Layout from '../layouts/layout.astro';
-import { RocketLaunch, Pencil, NotePencil, ArrowRight, Trophy, GameController, Lightning, ChatCentered, Kanban, CodeSimple, Plus, UserCircle } from "phosphor-react";
-import Pricing from '../components/pricing';
+import { Pencil, ArrowRight, Trophy, GameController, Lightning, CodeSimple, UserCircle, Code } from "phosphor-react";
+import Pricing from '../components/pricing.astro';
+import Warpspeed from '../components/warpspeed.astro';
 
 interface Frontmatter {
   title: string;
@@ -20,10 +21,14 @@ products.map((e, i) => {
 
 <Layout title="Deplōid Studio" banner="Try 3 days for free" dark>
 	<div class="flex flex-col gap-20 py-20">
-		<div class="absolute top-0 left-0 right-0 h-[1000px] bg-[#f43d3d]"></div>
+		<div class="absolute top-0 left-0 right-0 h-[1000px]">
+			<div class="absolute bottom-0 left-0 right-0 bg-gradient-to-b from-transparent to-zinc-900 h-80">123</div>
+			<Warpspeed/>
+			
+		</div>
 		<div class="relative flex flex-col items-center gap-10 px-4">
 			<div class="rounded-lg overflow-hidden shadow-xl">
-				<div class="h-7 bg-gray-300 flex items-center gap-2 px-2">
+				<div class="h-7 bg-gray-200 flex items-center gap-2 px-2">
 					<div class="h-3 w-3 bg-red-500 rounded-full"></div>
 					<div class="h-3 w-3 bg-yellow-500 rounded-full"></div>
 					<div class="h-3 w-3 bg-green-500 rounded-full"></div>
@@ -34,51 +39,48 @@ products.map((e, i) => {
 			<div class="flex flex-col md:flex-row max-w-4xl gap-6 text-white">
 				<div class="flex flex-1 items-center gap-4">
 					<div class="w-16 h-16 border-2 border-red-400 rounded-xl text-white flex items-center justify-center shrink-0">
-						<RocketLaunch size={30} />
+						<Pencil size={30} />
 					</div>
-					<p class="text-xl">Boost your project development with a starter kit and fast prototyping</p>
+					<p class="text-xl">Roll out your project with starter kits and start collecting feedback</p>
 				</div>
 				<div class="flex flex-1 items-center gap-4">
 					<div class="w-16 h-16 border-2 border-red-400 rounded-xl text-white flex items-center justify-center shrink-0">
-						<Pencil size={30} />
+						<Code size={30} />
 					</div>
-					<p class="text-xl text-white">Bring your tasks and make it personal with our custom development service</p>
+					<p class="text-xl">Bring your tasks and make it personal with our custom development service</p>
 				</div>
 			</div>
 		</div>
 		<div class="relative flex flex-col gap-10">
 			<div class="flex justify-center px-10 gap-10 overflow-y-scroll scrollbar-hide">
 				<div class="flex flex-col gap-10 w-56 md:w-96 shrink-0">
-					<div class="bg-gray-100 aspect-square"></div>
-					<div class="bg-gray-100 aspect-[9/16]"></div>
+					<a href="/products/caster" class="bg-gray-100 aspect-square"></a>
+					<a href="/products/caster" class="bg-gray-100 aspect-[9/16]"></a>
 				</div>
 				<div class="flex flex-col gap-10 w-56 md:w-96 shrink-0">
-					<div class="bg-gray-100 aspect-[9/16]"></div>
-					<div class="bg-gray-100 aspect-square"></div>
+					<a href="/products/caster" class="bg-gray-100 aspect-[9/16]"></a>
+					<a href="/products/caster" class="bg-gray-100 aspect-square"></a>
 				</div>
 				<div class="flex flex-col gap-10 w-56 md:w-96 shrink-0">
-					<div class="bg-gray-100 aspect-square"></div>
-					<div class="bg-gray-100 aspect-[9/16]"></div>
+					<a href="/products/caster" class="bg-gray-100 aspect-square"></a>
+					<a href="/products/caster" class="bg-gray-100 aspect-[9/16]"></a>
 				</div>
 				<div class="flex flex-col gap-10 w-56 md:w-96 shrink-0">
-					<div class="bg-gray-100 aspect-[9/16]"></div>
-					<div class="bg-gray-100 aspect-square"></div>
+					<a href="/products/caster" class="bg-gray-100 aspect-[9/16]"></a>
+					<a href="/products/caster" class="bg-gray-100 aspect-square"></a>
 				</div>
 				<div class="flex flex-col gap-10 w-56 md:w-96 shrink-0">
-					<div class="bg-gray-100 aspect-square"></div>
-					<div class="bg-gray-100 aspect-[9/16]"></div>
+					<a href="/products/caster" class="bg-gray-100 aspect-square"></a>
+					<a href="/products/caster" class="bg-gray-100 aspect-[9/16]"></a>
 				</div>
 				<div class="flex flex-col gap-10 w-56 md:w-96 shrink-0">
-					<div class="bg-gray-100 aspect-[9/16]"></div>
-					<div class="bg-gray-100 aspect-square"></div>
+					<a href="/products/caster" class="bg-gray-100 aspect-[9/16]"></a>
+					<a href="/products/caster" class="bg-gray-100 aspect-square"></a>
 				</div>
-				{/* {props.data.products.map((product: any, i: number) => <Card product={product} key={i}/>)} */}
-			</div>
-			<div class="flex justify-center gap-3 overflow-y-scroll scrollbar-hide">
-				{categories.map((category) => <a href={"/products?query=" + category} class="px-5 py-3 text-xl bg-gray-100 rounded-full hover:border-black capitalize">{category}</a>)}
-				<a href={"/products"} class="px-5 py-3 text-xl bg-gray-100 text-gray-500 rounded-full hover:border-black">View all</a>
 			</div>
 		</div>
+		
+		
 		<div class="container mx-auto px-4">
 			<div class="grid grid-cols-1 lg:grid-cols-4 gap-8 mt-10">
 				<div class="flex flex-col gap-4">
@@ -111,7 +113,8 @@ products.map((e, i) => {
 				</div>
 			</div>
 		</div>
-		<div class="container mx-auto py-20">
+		<Pricing client:visible/>
+		<div class="container mx-auto">
 			<div class="flex flex-col md:flex-row gap-10 px-4 items-end">
 				<div class="flex-1">
 					<h3 class="text-4xl md:text-6xl font-semibold !leading-snug">Looking for an on-demand development service for ever evolving digital products? Create your project and let's start discussing deets!</h3>
@@ -125,9 +128,9 @@ products.map((e, i) => {
 						</div>
 					</div>
 					<div>
-						<p class="text-2xl text-gray-500">Lets connect inside your project's repository and met your development demands</p>
+						<p class="text-2xl text-zinc-400">Lets connect inside your project's repository and met your development demands</p>
 					</div>
-					<a href="https://dash.deploid.studio/#/deploy/blank" class="bg-black text-white mt-4 px-6 py-4 flex items-center gap-4 rounded-xl text-xl">
+					<a href="/deploy/blank" class="bg-white text-black mt-4 px-6 py-4 flex items-center gap-4 rounded-xl text-xl">
 						<UserCircle size={30} />
 						<span class="flex-1 pt-[2px]">Connect with Github</span>
 						<ArrowRight size={30} />
@@ -135,6 +138,6 @@ products.map((e, i) => {
 				</div>
 			</div>
 		</div>
-		<Pricing client:visible title="We have a plan!"/>
+		
 	</div>
 </Layout>
