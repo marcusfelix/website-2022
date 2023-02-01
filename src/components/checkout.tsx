@@ -49,7 +49,7 @@ export default function Checkout(props: Props){
         <li className="flex items-center gap-2"><Check size={20}/> Landing pages</li>
       </ul>
     </div>
-    <a href="https://dash.deploid.studio/#/deploy/blank" className="bg-white text-black text-white mt-4 px-6 py-4 flex items-center gap-4 rounded-xl text-xl">
+    <a href={"/deploy/" + props.slug} className="bg-white text-black mt-4 px-6 py-4 flex items-center gap-4 rounded-xl text-xl">
       <Copy size={30} />
       <span className="flex-1 pt-[2px]">Clone with Github</span>
       <ArrowRight size={30} />

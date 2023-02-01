@@ -31,7 +31,7 @@ function WarpSpeed(targetId,config){
 	this.WARP_EFFECT=config.warpEffect==undefined?true:config.warpEffect;
 	this.WARP_EFFECT_LENGTH=config.warpEffectLength==undefined?5:config.warpEffectLength<0?0:config.warpEffectLength;
 	this.STAR_SCALE=config.starSize==undefined||config.starSize<=0?3:config.starSize;
-	this.BACKGROUND_COLOR=config.backgroundColor==undefined?"hsl(263,45%,7%)":config.backgroundColor;	
+	this.BACKGROUND_COLOR=config.backgroundColor==undefined?"hsla(0,0%,0%, 0)":config.backgroundColor;	
 	var canvas=document.getElementById(this.targetId);
 	canvas.width=1; canvas.height=1;
     this.STAR_COLOR=config.starColor==undefined?"#FFFFFF":config.starColor;
@@ -66,6 +66,7 @@ WarpSpeed.prototype={
 			if(this.WARP_EFFECT) this.maxLineWidth=this.size/30;
 			var ctx=canvas.getContext("2d");
             ctx.globalAlpha=1.0;
+			ctx.clearRect(0, 0, canvas.width, canvas.height)
 			ctx.fillStyle=this.BACKGROUND_COLOR;
 			ctx.fillRect(0,0,canvas.width,canvas.height);
 			ctx.fillStyle=this.STAR_COLOR;

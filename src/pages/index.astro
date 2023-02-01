@@ -21,12 +21,11 @@ products.map((e, i) => {
 
 <Layout title="Deplōid Studio" banner="Try 3 days for free" dark>
 	<div class="flex flex-col gap-20 py-20">
-		<div class="absolute top-0 left-0 right-0 h-[1000px]">
-			<div class="absolute bottom-0 left-0 right-0 bg-gradient-to-b from-transparent to-zinc-900 h-80">123</div>
+		<div class="absolute top-0 left-0 right-0 h-[1000px] bg-cover bg-gradient-to-b from-red-800 to-zinc-900 travel">
+			<div class="absolute w-full h-1/2 bottom-0 bg-gradient-to-b from-transparent to-zinc-900"></div>
 			<Warpspeed/>
-			
 		</div>
-		<div class="relative flex flex-col items-center gap-10 px-4">
+		<div class="relative flex flex-col items-center gap-10 px-4 z-20">
 			<div class="rounded-lg overflow-hidden shadow-xl">
 				<div class="h-7 bg-gray-200 flex items-center gap-2 px-2">
 					<div class="h-3 w-3 bg-red-500 rounded-full"></div>
@@ -51,32 +50,12 @@ products.map((e, i) => {
 				</div>
 			</div>
 		</div>
-		<div class="relative flex flex-col gap-10">
+		<div class="relative flex flex-col gap-10 z-20">
 			<div class="flex justify-center px-10 gap-10 overflow-y-scroll scrollbar-hide">
 				<div class="flex flex-col gap-10 w-56 md:w-96 shrink-0">
-					<a href="/products/caster" class="bg-gray-100 aspect-square"></a>
 					<a href="/products/caster" class="bg-gray-100 aspect-[9/16]"></a>
 				</div>
-				<div class="flex flex-col gap-10 w-56 md:w-96 shrink-0">
-					<a href="/products/caster" class="bg-gray-100 aspect-[9/16]"></a>
-					<a href="/products/caster" class="bg-gray-100 aspect-square"></a>
-				</div>
-				<div class="flex flex-col gap-10 w-56 md:w-96 shrink-0">
-					<a href="/products/caster" class="bg-gray-100 aspect-square"></a>
-					<a href="/products/caster" class="bg-gray-100 aspect-[9/16]"></a>
-				</div>
-				<div class="flex flex-col gap-10 w-56 md:w-96 shrink-0">
-					<a href="/products/caster" class="bg-gray-100 aspect-[9/16]"></a>
-					<a href="/products/caster" class="bg-gray-100 aspect-square"></a>
-				</div>
-				<div class="flex flex-col gap-10 w-56 md:w-96 shrink-0">
-					<a href="/products/caster" class="bg-gray-100 aspect-square"></a>
-					<a href="/products/caster" class="bg-gray-100 aspect-[9/16]"></a>
-				</div>
-				<div class="flex flex-col gap-10 w-56 md:w-96 shrink-0">
-					<a href="/products/caster" class="bg-gray-100 aspect-[9/16]"></a>
-					<a href="/products/caster" class="bg-gray-100 aspect-square"></a>
-				</div>
+				
 			</div>
 		</div>
 		
@@ -88,28 +67,28 @@ products.map((e, i) => {
 						<Trophy size={32} />
 					</div>
 					<h3 class="text-2xl font-semibold">100% satisfaction</h3>
-					<p class="text-xl text-gray-500">We are in feedback loop mode until you are 100% satisfied </p>
+					<p class="text-xl text-zinc-400">We are in feedback loop mode until you are 100% satisfied </p>
 				</div>
 				<div class="flex flex-col gap-4">
 					<div class="w-16 h-16 rounded-xl bg-gray-200 text-gray-600 flex items-center justify-center shrink-0 mb-1">
 						<GameController size={32} />
 					</div>
 					<h3 class="text-2xl font-semibold">You are in controll</h3>
-					<p class="text-xl text-gray-500">Start, pause or cancel your subscription anytime</p>
+					<p class="text-xl text-zinc-400">Start, pause or cancel your subscription anytime</p>
 				</div>
 				<div class="flex flex-col gap-4">
 					<div class="w-16 h-16 rounded-xl bg-gray-200 text-gray-600 flex items-center justify-center shrink-0 mb-1">
 						<Lightning size={32} />
 					</div>
 					<h3 class="text-2xl font-semibold">Fast iteration</h3>
-					<p class="text-xl text-gray-500">Our first response within 24h and test-builds in 3 days</p>
+					<p class="text-xl text-zinc-400">Our first response within 24h and test-builds in 3 days</p>
 				</div>
 				<div class="flex flex-col gap-4">
 					<div class="w-16 h-16 rounded-xl bg-gray-200 text-gray-600 flex items-center justify-center shrink-0 mb-1">
 						<CodeSimple size={32} />
 					</div>
 					<h3 class="text-2xl font-semibold">Solid compliance</h3>
-					<p class="text-xl text-gray-500">All work is done in your own private Github repository</p>
+					<p class="text-xl text-zinc-400">All work is done in your own private Github repository</p>
 				</div>
 			</div>
 		</div>
@@ -124,11 +103,11 @@ products.map((e, i) => {
 						<img src="/bro.png" class="object-fit rounded-full w-20 h-20"/>
 						<div>
 							<p class="text-xl font-semibold">Marcus Felix</p>
-							<p class="text-sm text-gray-400">Creative developer at Deploid Studio</p>
+							<p class="text-zinc-400">Creative app developer</p>
 						</div>
 					</div>
 					<div>
-						<p class="text-2xl text-zinc-400">Lets connect inside your project's repository and met your development demands</p>
+						<p class="text-xl text-zinc-400">Lets connect inside your project's repository and met your development demands</p>
 					</div>
 					<a href="/deploy/blank" class="bg-white text-black mt-4 px-6 py-4 flex items-center gap-4 rounded-xl text-xl">
 						<UserCircle size={30} />
@@ -141,3 +120,20 @@ products.map((e, i) => {
 		
 	</div>
 </Layout>
+<style>
+	.travel{
+		animation: travelling 60s normal forwards ease-in-out;
+		background-position: center;
+	}
+	.vignette {
+		background: radial-gradient(transparent, black);
+	}
+	@keyframes travelling {
+		0%   {
+			background-size: auto 100%;
+		}
+		100% {
+			background-size: auto 150%;
+		}
+	}
+</style>

@@ -1,5 +1,5 @@
 ---
-title: Caster
+title: Example
 layout: ../../layouts/product.astro
 category: podcast
 demo: https://caster.deploid.app
