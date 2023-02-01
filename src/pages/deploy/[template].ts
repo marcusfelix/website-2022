@@ -1,7 +1,7 @@
 import type { APIRoute } from "astro";
 
-const client_id = import.meta.env.OAUT2_CLIENT_ID;
-const client_secret = import.meta.env.OAUT2_CLIENT_SECRET;
+const client_id = import.meta.env.OAUTH2_CLIENT_ID;
+const client_secret = import.meta.env.OAUTH2_CLIENT_SECRET;
 
 export const get: APIRoute = async ({ params, request, redirect }) => {
   const template = new URL(request.url).searchParams.get("template") ?? "blank"
