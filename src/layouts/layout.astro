@@ -1,5 +1,5 @@
 ---
-import { UserCircle } from "phosphor-react";
+import { CaretRight, UserCircle } from "phosphor-react";
 
 const { title, description, tags, banner, dark } = Astro.props;
 ---
@@ -24,9 +24,10 @@ const { title, description, tags, banner, dark } = Astro.props;
 				<a href="/">
 					<img src={dark ? "/icon.svg" : "/icon-alt.svg"} class="w-20 h-20"/>
 				</a>
-				<div class="flex justify-end flex-1">
-					<a href="https://dash.deploid.studio" class="h-10 w-10 rounded-full flex items-center justify-center hover:rotate-12 transition-all">
-						<img src={dark ? "/cup.svg"  : "/cup-alt.svg"} class="w-12 h-12"/>
+				<div class="relative flex justify-end flex-1">
+					<a href="https://github.com/marcusfelix" target="_blank" class="relative h-10 w-10 rounded-full flex items-center justify-center cup">
+						<img src={dark ? "/cup.svg"  : "/cup-alt.svg"} class="w-12 h-12 hover:rotate-12 transition-all"/>
+						<div class="github absolute bottom-2 right-0 opacity-0 rounded-md bg-white py-1 px-2 font-bold text-black transition-all">Github! <span class="absolute text-white bottom-[4px] -right-3"><CaretRight size={22} weight="fill"/></span></div>
 					</a>
 				</div>
 			</div>
@@ -46,7 +47,7 @@ const { title, description, tags, banner, dark } = Astro.props;
 					</div>
 				</div>
 				<div class="flex-1 flex flex-col text-lg gap-2">
-					<a href="mailto: hello@deploid.studio">hello@marcusfelix.dev</a>
+					<a href="mailto: hello@marcusfelix.dev">hello@marcusfelix.dev</a>
 				</div>
 				<div class="flex flex-col text-lg gap-2">
 					<a href="https://github.com/marcusfelix" target="_blank">Github</a>
@@ -59,7 +60,7 @@ const { title, description, tags, banner, dark } = Astro.props;
 					<a href="/privacy">Privacy policy</a>
 				</div>
 			</div>
-			<div class="py-4">© {new Date().getFullYear()} Marcus Felix </div>
+			<div class="py-10">© {new Date().getFullYear()} Marcus Felix </div>
 		</footer>
 	</body>
 </html>
@@ -80,5 +81,8 @@ const { title, description, tags, banner, dark } = Astro.props;
 	::-webkit-scrollbar-thumb
 	{
 		background-color: white;
+	}
+	.cup:hover .github {
+		@apply opacity-100 right-14
 	}
 </style>

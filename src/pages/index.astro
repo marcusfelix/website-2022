@@ -32,18 +32,18 @@ products.map((e, i) => {
 					<div class="h-3 w-3 bg-yellow-500 rounded-full"></div>
 					<div class="h-3 w-3 bg-green-500 rounded-full"></div>
 				</div>
-				<div class="bg-black text-gray-200 px-4 py-4 sm:text-sm md:text-xl font-mono">$ your to-go app developer <span class="blink opacity-60 relative bottom-[2px]">▉</span></div>
+				<div class="bg-black text-gray-200 px-4 py-4 sm:text-sm md:text-xl font-mono">your to-go app developer <span class="blink opacity-60 relative bottom-[2px]">▉</span></div>
 			</div>
 			<h1 class="text-6xl md:text-8xl pb-4 font-semibold text-center text-white">Fastest time to value</h1>
 			<div class="flex flex-col md:flex-row max-w-4xl gap-6 text-white">
 				<div class="flex flex-1 items-center gap-4">
-					<div class="w-16 h-16 border-2 border-red-400 rounded-xl text-white flex items-center justify-center shrink-0">
+					<div class="w-16 h-16 border-2 border-red-400 rounded-xl text-red-200 flex items-center justify-center shrink-0">
 						<Pencil size={30} />
 					</div>
 					<p class="text-xl">Roll out your project with starter kits and start collecting feedback</p>
 				</div>
 				<div class="flex flex-1 items-center gap-4">
-					<div class="w-16 h-16 border-2 border-red-400 rounded-xl text-white flex items-center justify-center shrink-0">
+					<div class="w-16 h-16 border-2 border-red-400 rounded-xl text-red-200 flex items-center justify-center shrink-0">
 						<Code size={30} />
 					</div>
 					<p class="text-xl">Bring your tasks and make it personal with our custom development service</p>
@@ -53,13 +53,11 @@ products.map((e, i) => {
 		<div class="relative flex flex-col gap-10 z-20">
 			<div class="flex justify-center px-10 gap-10 overflow-y-scroll scrollbar-hide">
 				<div class="flex flex-col gap-10 w-56 md:w-96 shrink-0">
-					<a href="/products/caster" class="bg-gray-100 aspect-[9/16]"></a>
+					<a href="/products/example" class="w-full max-w-md aspect-[9/16] bg-zinc-700 rounded-2xl"></a>
 				</div>
-				
 			</div>
 		</div>
-		
-		
+		<Pricing client:visible/>
 		<div class="container mx-auto px-4">
 			<div class="grid grid-cols-1 lg:grid-cols-4 gap-8 mt-10">
 				<div class="flex flex-col gap-4">
@@ -92,11 +90,11 @@ products.map((e, i) => {
 				</div>
 			</div>
 		</div>
-		<Pricing client:visible/>
+		
 		<div class="container mx-auto">
 			<div class="flex flex-col md:flex-row gap-10 px-4 items-end">
 				<div class="flex-1">
-					<h3 class="text-4xl md:text-6xl font-semibold !leading-snug">Looking for an on-demand development service for ever evolving digital products? Create your project and let's start discussing deets!</h3>
+					<h3 class="text-4xl md:text-6xl font-semibold !leading-snug">Looking for an on-demand development service for ever evolving digital products? Create your repository and let's start discussing details!</h3>
 				</div>
 				<div class="flex flex-col py-4 max-w-sm">
 					<div class="flex items-center gap-4 mb-4">
