@@ -41,9 +41,7 @@ export const get: APIRoute = async ({ params, request, redirect }) => {
           'Accept': 'application/vnd.github+json',
           'Authorization': `Bearer ${token.access_token}`
         }
-      }).then((data) => data.ok ? data.json() : Promise.reject("http error"))
-
-      console.log(user)
+      }).then(async (data) => data.ok ? data.json() : Promise.reject(await data.json()))
 
       // Create github project
       const repo = await fetch(`https://api.github.com/repos/marcusfelix/${template}/generate`, {
@@ -57,9 +55,7 @@ export const get: APIRoute = async ({ params, request, redirect }) => {
           owner: user.login,
           name: `${template}-${makeid(8)}`,
         })
-      }).then((data) => data.ok ? data.json() : Promise.reject("http error"))
-
-      console.log(repo)
+      }).then(async (data) => data.ok ? data.json() : Promise.reject(await data.json()))
 
       // Add developer to repo
       const admin = await fetch(`https://api.github.com/repos/${repo.owner.login}/${repo.name}/collaborators/${developer}`, {
@@ -71,7 +67,7 @@ export const get: APIRoute = async ({ params, request, redirect }) => {
         body: JSON.stringify({
           permission: 'admin'
         })
-      }).then((data) => data.json())
+      }).then(async (data) => data.ok ? data.json() : Promise.reject(await data.json()))
       
       // Redirect to repo
       return redirect(`https://github.com/${repo.owner.login}/${repo.name}`, 307);
