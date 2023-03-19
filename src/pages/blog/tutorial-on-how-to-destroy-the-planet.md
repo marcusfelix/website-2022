@@ -35,19 +35,19 @@ We all know how centrifugal force works:
 
 <iframe src="https://giphy.com/embed/8B4uAsmg4kI92" width="480" height="292" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/fail-fall-spinning-8B4uAsmg4kI92">via GIPHY</a></p>
 
-Imagina se fosse possível acelerar a rotação do planeta com foguetes no equador, fixos em determinado ângulo a ponto que o planeta desse uma volta a cada 80 minutos. Isso seria suficiente pra achatar a forma esférica com pedaços da crosta terrestre se desprendendo até sobrar somente o magma exposto. Nesse caso, momentos antes do apocalipse, ventos de velocidade assombrosa não somente arrancariam as roupas do varal mas alisariam a superfície da Terra, removendo montanhas e tampando vales com vento, poeira e água dos mares. Estejam avisados.
+Imagine if it's possible to accelerate the planetary rotation with rockets at the equator's line, fixed with some adequated angle to accelerate Earth's rotation to way beyond 1 complete revolution every 24h but like 1 revolution every 80 minutes. This will be suficient to flatten the semi-spherical shape even more with large chunks of curst coming off until remain only expoded magma. In this case, moments before the apocalipse, ultra fast winds not only would rip off your clothesline but would smooth the entire Earth's surface, removing mountains and valeys with dust and water. Be advised.
 
-### Acerte uma pedra grande o suficiente
+### Hit with a large enough rock
 
-Tudo pode ser destruído com força bruta adequada. Então consiga uma pedra grande, talvez Marte, acelere a uma enorme velocidade e lance rumo a Terra. O impacto ia pulverizar os 2 planetas, onde os pedaços, poeira e magma dificilmente iriam coagular novamente em um novo corpo sobrando apenas um cinturão de meteoros. Mas você precisa se esforçar. Seria necessário lançar Marte a uma velocidade de 11km por segundo pra tudo dar certo. É possível usar um corpo menor, tipo um asteroide de 5,000,000,000,000 toneladas, mas dai é necessário acelerar mais, talvez uns 90% da velocidade da luz seria o bastante.
+Everything can be destroyed with adequate brute force. So, find a big rock, mayme Mars, accelerate to a anourmous velocity and throw towards Earth. The impact would puverize both of them, where the chunks, dust and magma hardly cloat again in a new rock formation, remaining only a large asteroid belt. But you need to make an effort. It's possible with a smaller rock, like a 5,000,000,000,000 ton asteroid, but will be necessary to accelerate more, maybe 90% speed of light could be sufficient.
 
-### Queime com fogo
+### Kill with fire
 
-A solução mais óbvia seria lançar o planeta no Sol e deixar que o calor de 5504ºc derretesse a terra em uma bola de ferro vaporizado que lentamente seria engolida pela gravidade do Sol. Tudo bem que se a Terra cessasse seu movimento em torno do sol, ela já ia lentamente ser puxada pela gravidade até colidir com a nossa estrela. Mas isso parece ser mais impossível que simplesmente acelerar o Sol rumo a órbita da Terra e esperar o mergulho na superfície do mar de fogo. Na verdade isso também parece bem impossível.
+The obvious solution would be to throw Earth in to the Sun and let the 5504ºc heat melt the planet in to vaporized iron ball, slowly engoulfed by Sun's gravity. It's all right that if Earth's rotation arround the Sun stop, the planet would be slowly pulled towards the Sun. But more impossible to change Earth's orbit to inner orbits, it is to stop Earth's orbit at all.
 
-Mas lembre-se que nosso Sol está na metade de sua vida e que daqui 5 bilhões de anos vai dar seu último suspiro. Assim que o combustível da fusão nuclear que ocorre em seu núcleo acabar, a atmosfera do Sol vai expandir, engolindo Mercúrio e Vênus. Provavelmente a Terra não vai ser engolida, mas será o fim de tudo que vive sobre sua superfície. Seria um aquecimento global com super poderes.
+But remember that our Sun is in the middle of it's life and in 5 bilion years will give your last breath. When the nucler fusion fuel finish, the Sun's atmosphere will expand and swallow Mercury, Venus and maybe Earth. Even if Earth will not be engulfed, it will be the end for live on Earth with the Sun's atmosphere so close to us. Would be a global warming with superpowers.
 
-### Buraco de minhoca para o fim dos tempos
+### Wormhole to the end of time
 
 Quem já assistiu o filme Interestelar do Christopher Nolan conhece uma boa representação visual de uma Ponte Einstein-Podolsky-Rosen, também chamado de Buraco de Minhoca. No filme os personagens entram em um desses buracos e viajam através de uma dobra no tempo-espaço até um sistema de planetas orbitando um maravilhoso buraco negro.
 

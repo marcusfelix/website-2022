@@ -17,6 +17,14 @@
   transform-origin: center center;
 }
 
+.prose-xl h1, .prose-xl h2, .prose-xl h3 {
+  font-weight: bold !important;
+}
+
+.prose-xl p {
+  font-weight: lighter;
+}
+
 @keyframes fadein { 
   100% { 
       opacity: 1;
