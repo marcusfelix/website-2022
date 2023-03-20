@@ -25,6 +25,10 @@
   font-weight: lighter;
 }
 
+.prose-xl img, .prose-xl iframe {
+  margin: 0px auto
+}
+
 @keyframes fadein { 
   100% { 
       opacity: 1;

@@ -1,6 +1,6 @@
 ---
 import Layout from '../layouts/layout.astro';
-import { Pencil, ArrowRight, Trophy, GameController, Lightning, CodeSimple, UserCircle, Code } from "phosphor-react";
+import { ArrowRight, Trophy, GameController, Lightning, CodeSimple, UserCircle } from "phosphor-react";
 import Pricing from '../components/pricing.astro';
 import Warpspeed from '../components/warpspeed.astro';
 import Post from '../components/post.astro';
@@ -10,15 +10,6 @@ interface Frontmatter {
   cover: string;
   category: string
 }
-
-// const products = await Astro.glob<Frontmatter>('./products/*.md');
-// const categories: string[] = []
-
-// products.map((e, i) => {
-// 	if(!categories.includes(e.frontmatter.category)){
-// 		categories.push(e.frontmatter.category)
-// 	}
-// })
 
 const posts = await Astro.glob<Frontmatter>('./blog/*.md').then((data) => data.slice(0, (data.length < 4 ? data.length : 4)));
 ---
