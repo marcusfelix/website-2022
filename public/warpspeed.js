@@ -1,3 +1,5 @@
+// https://github.com/adolfintel/warpspeed
+
 window.requestAnimationFrame=window.requestAnimationFrame||(function(callback,element){setTimeout(callback,1000/60);});
 
 function timeStamp(){

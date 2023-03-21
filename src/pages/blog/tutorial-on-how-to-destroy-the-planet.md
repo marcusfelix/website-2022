@@ -13,9 +13,9 @@ description: First, i need to say that destroy the planet is a very hard task, b
 
 First, i need to say that destroy the planet is a very hard task, but we will list here some ways to end this place we call Earth. Second, none of this methods listed here are easy to access, actually they are completely inaccessible, so don't worry to share this article.
 
-![](https://cdn-images-1.medium.com/max/2000/1*7gRi0ifN5TTHG-H9DQXd7w.jpeg)
+![tafuq?](/assets/1_7gRi0ifN5TTHG-H9DQXd7w.webp)
 
-Our planet are roughly 4.5 billion years old (if you believe) and stays still. Has resisted millions of asteroid impacts which sizes varies from a small car to corpus of the size of planet Mars - actually this is one of the theories about the origin of Moon where a stray planet about the size of mars collided with Earth and remaining shreds of the impact generated, fist a ring like Saturn, and later the Moon, but i digress.
+Our planet are roughly 4.5 billion years old (if you believe) and stays still. Has resisted millions asteroid impacts which sizes varies from a small car to corpus of the size of planet Mars - actually this is one of the theories about the origin of Moon where a stray planet about the size of mars collided with Earth and remaining shreds of the impact generated, fist a ring like Saturn, and later the Moon, but i digress.
 
 It is a semi-sphere with 5,973,600,000,000,000,000,000 (5 sextillion) ton of basic iron. Has 12km diameter, 510.100.000km² of area and it is not a plane disc supported by 4 elephants above a gigantic cosmic turtle.
 
