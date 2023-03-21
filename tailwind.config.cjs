@@ -7,11 +7,11 @@ module.exports = {
 				sans: "'Helvetica Now Display', sans-serif"
 			},
 			letterSpacing: {
-        normal: '.03em',
-      },
+				normal: '.03em',
+			},
 			boxShadow: {
-        'flat': '6px 6px 0px 0px rgb(0 0 0 / 0.25)',
-      }
+				'flat': '6px 6px 0px 0px rgb(0 0 0 / 0.25)',
+			},
 		},
 	},
 	plugins: [

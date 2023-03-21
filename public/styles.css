@@ -17,6 +17,18 @@
   transform-origin: center center;
 }
 
+.prose-xl h1, .prose-xl h2, .prose-xl h3 {
+  font-weight: bold !important;
+}
+
+.prose-xl p {
+  font-weight: lighter;
+}
+
+.prose-xl img, .prose-xl iframe {
+  margin: 0px auto
+}
+
 @keyframes fadein { 
   100% { 
       opacity: 1;
